@@ -1,0 +1,351 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.total-body{
+    overflow: hidden;
+}
+@media screen and (max-width:767px) { 
+    .header{
+        display: none;
+    }
+}
+/* First Nav Bar */
+.first-nav{
+    height: 60px;
+}
+.first-nav-content,.sec-nav-content{
+    width: 85%;
+}
+.logo-search{
+    width: 70%;
+}
+.logo-search a{
+    width: 115px;
+}
+@media screen and (max-width:768px) {
+    .buttons-icon a,.buttons-icon i,.buttons-icon button,.logo-search a{
+        display: none;
+    }
+    .logo-search input{
+        font-weight: 500;
+        width: 100%;
+    }
+    .logo-search{
+        width: 100%;
+    }
+    .first-nav-content{
+        width: 152%;
+    }
+    .first-nav{
+        padding: 0px 20px;
+    }
+}
+.logo-search input{
+    outline: 0px;
+    width: 65%;
+    height: 35px;
+}
+.signin-button{
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+/* Modal */
+.all-buttons{
+    display: block;
+    justify-content: center;
+}
+.top-social-media{
+    display: flex;
+    border: 1px solid rgb(159, 157, 157);
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 75%;
+    margin: 20px auto;
+    cursor: pointer;
+    row-gap: 10px;
+}
+.sm-logo{
+    margin: 0px 60px 0px 10px;
+}
+.sm-text{
+    font-weight: 500;
+}
+.phone{
+    width: 75%;
+    margin: 20px auto;
+}
+.mobile-num{
+    margin-left: 5px;
+}
+.mobile-num input{
+    border-width: 0px 0px 1px 0px;
+    outline: 0px;
+    width: 150%;
+    color: rgb(135, 131, 131);
+}
+.modalFooter{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+}
+.modalFooter:hover{
+    color: rgb(96, 96, 96);
+}
+
+/* Off Canvas */
+.side-box{
+    width: 100%;
+}
+.side-box img{
+    width: 50px;
+    height: 50px;
+}
+.side-box p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 5px;
+    padding: 0px 10px;
+}
+.side-box a,.side-box a:hover{
+    border: 1px solid red;
+    color: red;
+}
+.sidebar-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.icons-text{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    min-height: 40px;
+    border-bottom: 1px solid rgb(241, 240, 240);
+}
+.icons-text div{
+    padding: 5px 15px;
+}
+.icons-text div img{
+    width: 20px;
+    height: 20px;
+}
+.head-text{
+    font-size: 14px;
+}
+.sub-text{
+    font-size: 12px;
+    line-height: 0px;
+    color: rgb(102, 101, 101);
+}
+
+/* Second Nav Bar */
+.second-nav{
+    height: 50px;
+}
+.left{
+    width: 60%;
+}
+.left-links a{
+    color: rgb(203, 202, 202);
+    font-weight: 500;
+    text-decoration: none;
+}
+.left-links a:hover{
+    color: white;
+    text-decoration: none;
+}
+.left-links img{
+    width: 35%;
+}
+@media screen and (max-width:1024px) {
+    .left-links img{
+        width: 30%;
+        height: 16px;
+    }
+}
+.right-links{
+    height: 50px;
+}
+.right-links a{
+    font-size: 13px;
+    color: rgb(203, 202, 202);
+    font-weight: 500;
+    text-decoration: none;
+}
+.right-links a:hover{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width:768px) {
+    .right{
+        display: none;
+    }
+    .sec-nav-content{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+}
+
+/* Images Slide shows */
+.images-slideshow{
+    width: 100%;
+    background-color: rgb(90, 90, 88);
+    padding: 40px;
+    margin-bottom: 40px;
+}
+@media screen and (max-width:767px) {
+    .abc{
+        display: block;
+        flex-direction: column;
+    }
+    .image-text2,.image-text1{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+.image-text1{
+    padding: 60px 0px 0px 20px;
+    color: white;
+}
+.play-button img{
+    width: 120px;
+}
+.image-text1 div{
+    margin-bottom: 15px;
+}
+.image-text2{
+    color: white;
+    padding: 60px 40px 0px 20px;
+}
+.image-text2 div{
+    margin-bottom: 15px;
+}
+.dg-description{
+    width: 70%;
+}
+
+/* Premiere of the week */
+.premiere-sec{
+    margin-bottom: 30px;
+}
+
+/* Upcoming Movies */
+.pre-booking{
+    font-weight: 700;
+}
+
+/* Exclusive Section */
+.exclusive-sec{
+    width: 100%;
+    padding: 25px 0px;
+    margin-bottom: 30px;
+}
+.exclusive-image{
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/* Price Range Section */
+.price-range-sec{
+    width: 100%;
+    background-color: rgb(45, 44, 46);
+}
+.price-range-content{
+    color: white;
+    padding: 15px 0px;
+}
+.price-heading{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.price{
+    margin-right: 10px;
+    background-color: orangered;
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.all-prices{
+    display: flex;
+}
+@media screen and (max-width:760px) {
+    .all-prices{
+        display: block;
+    }
+    .first-line{
+        margin-bottom: 10px;
+    }
+}
+
+/* Bottom Text */
+.bottom-text-sec{
+    background-color: rgb(242, 242, 242);
+    cursor: default;
+    color: rgb(127, 127, 127);
+}
+.headings h3{
+    font-size: 18px;
+}
+.headings h4{
+    font-size: 16px;
+}
+.paras div{
+    font-size: 14px;
+}
+
+/* Footer */
+.long-text{
+    flex: 1 1 0%;
+}
+.footer-second{
+    background-color: rgb(67, 67, 67);
+    color: rgb(153, 153, 153);
+}
+.movie-now{
+    background-color: rgb(53, 53, 53);
+    color: rgb(156, 156, 156);
+}
+.movies-now-heading{
+    color: rgb(166, 166, 166);
+    font-size: 14px;
+}
+.movie-title a{
+    text-decoration: none;
+    color: rgb(127, 127, 127);
+    padding-right: 5px;
+    margin: 0px 5px 5px 0px;
+    border-right: 1px solid rgb(127, 127, 127);
+    font-size: 12px;
+}
+.movie-title a:hover{
+    text-decoration: none;
+    color: white;
+}
+.footer-bottom{
+    background-color: rgb(51, 51, 51);
+    color: rgb(127, 127, 127);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    padding: 0px 24px 20px 24px;
+}
+.bms-logo{
+    height: 100px;
+}
+.social-media a{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    text-decoration: none;
+}

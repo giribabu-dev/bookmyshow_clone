@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Movies Online in HD | Buy or Rent TV Series</title>
+    <link rel="stylesheet" href="Stream.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </link>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="total-body">
+        <header class="header w-100">
+            <div class="first-nav w-100 bg-secondary">
+                <div class="first-nav-content h-100 mx-auto">
+                    <div class="first-nav-size h-100 d-flex justify-content-between">
+                        <div class="first-nav-sections w-100 h-100 d-flex justify-content-between align-items-center">
+                            <div class="logo-search d-flex">
+                                <a href="../Home.html" class="mr-3">
+                                    <img src="../images/logo/logo.svg" class="img-fluid">
+                                </a>
+                                <input type="search"
+                                    placeholder="      Search for Movies, Events, Plays, Sports and Activities"
+                                    class="rounded border-0">
+                            </div>
+                            <div class="buttons-icon d-flex align-items-center">
+                                <button type="button" class="btn btn-secondary dropdown-toggle mr-3">Hyderabad</button>
+
+                                <div class="signin-button mr-3 text-center text-light bg-danger rounded font-weight-bolder"
+                                    data-bs-toggle="modal" data-bs-target="#signin">Sign In</div>
+                                <!-- The Modal -->
+                                <div class="modal fade" id="signin">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Get Started</h5>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <!-- Modal Body -->
+                                            <div class="modal-body">
+                                                <div class="all-buttons mb-5">
+                                                    <div class="top-social-media">
+                                                        <div class="sm-logo">
+                                                            <img
+                                                                src="https://in.bmscdn.com/webin/common/icons/googlelogo.svg">
+                                                        </div>
+                                                        <div class="sm-text">Continue with Google</div>
+                                                    </div>
+                                                    <div class="top-social-media">
+                                                        <div class="sm-logo">
+                                                            <img
+                                                                src="https://in.bmscdn.com/webin/common/icons/email.svg">
+                                                        </div>
+                                                        <div class="sm-text">Continue with Email</div>
+                                                    </div>
+                                                    <div class="top-social-media">
+                                                        <div class="sm-logo">
+                                                            <i class="fa-brands fa-apple fa-xl"></i>
+                                                        </div>
+                                                        <div class="sm-text">Continue with Apple</div>
+                                                    </div>
+                                                    <div class="text-center">OR</div>
+                                                    <form class="phone">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <img
+                                                                    src="https://in.bmscdn.com/webin/common/icons/indianflag.svg">
+                                                            </div>
+                                                            <div>+91</div>
+                                                            <div class="mobile-num">
+                                                                <input type="text"
+                                                                    placeholder="Continue with mobile number"
+                                                                    pattern="[0-9]{10}">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- Modal Footer -->
+                                            <div class="pb-4">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center modalFooter">
+                                                    I agree to the &nbsp<a href="#" class="modalFooter"> Terms &
+                                                        Conditions </a>&nbsp & &nbsp<a href="#" class="modalFooter">
+                                                        Privacy Policy</a>.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  Button to open the offcanvas sidebar -->
+                                <button type="button" class="btn btn-outline-none" data-bs-toggle="offcanvas"
+                                    data-bs-target="#demo">
+                                    <i class="fa-solid fa-bars fa-xl text-light"></i>
+                                </button>
+                            </div>
+
+                            <!-- Offcanvas Sidebar -->
+                            <div class="offcanvas offcanvas-end" id="demo">
+                                <div class="offcanvas-header bg-dark">
+                                    <h3 class="offcanvas-title text-light">Hey!</h3>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="d-flex justify-content-around align-items-center side-box">
+                                        <img src="../images/logo/rewards_login.png" class="img-fluid">
+                                        <p>Unlock special offers & <br>great benefits</p>
+                                        <a class="btn">Login/Register</a>
+                                    </div>
+                                    <div class="sidebar-body">
+                                        <div class="icons-text">
+                                            <div>
+                                                <img src="https://cdn-icons-png.flaticon.com/512/3119/3119338.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Notifications</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img
+                                                    src="https://assets-in.bmscdn.com/members/common/icons/purchasehistory.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Your Orders</p>
+                                                <p class="sub-text">View all your bookings & purchases</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img
+                                                    src="https://assets-in.bmscdn.com/members/common/icons/streamlibrary_2.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Stream Library</p>
+                                                <p class="sub-text">Rented & Purchased Movies</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img
+                                                    src="https://assets-in.bmscdn.com/members/common/icons/playcreditcard.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Play Credit Card</p>
+                                                <p class="sub-text">View your Play Credit Card details and offers</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img
+                                                    src="https://assets-in.bmscdn.com/members/common/icons/helpandsupport.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Help & Support</p>
+                                                <p class="sub-text">View commonly asked queries and Chat</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img
+                                                    src="https://assets-in.bmscdn.com/members/common/icons/accountandsettings.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Accounts & Settings</p>
+                                                <p class="sub-text">Location, Payments, Permissions & More</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img
+                                                    src="https://assets-in.bmscdn.com/members/common/icons/rewards_1.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Rewards</p>
+                                                <p class="sub-text">View your rewards & Unlock new ones</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img
+                                                    src="https://assets-in.bmscdn.com/members/common/icons/bookasmile.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">BookASmile</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-nav bg-dark">
+                <div class="sec-nav-content h-100 mx-auto">
+                    <div class="sec-nav-size h-100 d-flex justify-content-between">
+                        <div class="left d-flex align-items-center">
+                            <div class="left-links d-flex align-items-center">
+                                <a href="../movies/Movies.html" class="mr-3">Movies</a>
+                                <a href="Stream.html" class="mr-3">Stream</a>
+                                <a href="#" class="mr-3">Events</a>
+                                <a href="#" class="mr-3">Plays</a>
+                                <a href="#" class="mr-3">Sports</a>
+                                <a href="#">Activities</a>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="right-links w-100 d-flex align-items-center">
+                                <a href="#" class="mr-2">ListYourShow</a>
+                                <a href="#" class="mr-2">Corporates</a>
+                                <a href="#" class="mr-2">Offers</a>
+                                <a href="#" class="">Gift Cards</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Image Slideshows -->
+        <section class="images-slideshow">
+            <div id="babu" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#babu" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#babu" data-bs-slide-to="1"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="d-flex abc">
+                                <div class="col-lg-3">
+                                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00368203-pqqpxycfts-portrait.jpg"
+                                        class="rounded img-fluid">
+                                </div>
+                                <div class="image-text1">
+                                    <div class="play-button">
+                                        <img src="premiere-chip-tag.png" class="img-fluid">
+                                    </div>
+                                    <div>Brand new releases every Friday</div>
+                                    <h1>Unforgotten Series 5</h1>
+                                    <div>4h 30m Drama 18+</div>
+                                    <div>English</div>
+                                    <div>Detectives uncover the mystery behind an unsolved murder.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="d-flex abc">
+                                <div class="col-lg-3">
+                                    <img src="https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/doodhpither-gachh-et00145296-1693812859.jpg"
+                                        class="rounded img-fluid">
+                                </div>
+                                <div class="image-text2">
+                                    <div class="play-button">
+                                        <img src="premiere-chip-tag.png" class="img-fluid">
+                                    </div>
+                                    <div>Brand new releases every Friday</div>
+                                    <h1>Doodhpitcher Gachh</h1>
+                                    <div>1h 46m Drama U</div>
+                                    <div>Bengali</div>
+                                    <div class="dg-description">
+                                        Doodhpitcher Gachh is a drama film revolving around Gour, a 7-year-old boy with
+                                        a speech impairment
+                                        who has big dreams and believes that sowing a rice cake can lead to growing a
+                                        rice cake tree.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#babu" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#babu" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Premier of the week -->
+        <section class="premiere-sec">
+            <div class="container">
+                <h3>Premiere of the week</h3>
+                <div class="d-flex row" style="gap:20px 0px">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="../images/premiere/chapel.avif" class="rounded img-fluid" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="../images/premiere/well.avif" class="rounded img-fluid" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="../images/premiere/neeraja.avif" class="rounded img-fluid" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="../images/premiere/immaculate.avif" class="rounded img-fluid" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="../images/premiere/twisters.avif" class="rounded img-fluid" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="../images/premiere/goldRun.avif" class="img-fluid rounded" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--New On Stream-->
+        <section>
+            <div class="container">
+                <h3>New On Stream</h3>
+                <div class="row d" style="row-gap: 20px;">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/newOnStream/failGuy.avif" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/newOnStream/godzillaKong.avif" class="rounded img-fluid" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/newOnStream/fastCharlie.avif" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/exclusives/aazam.avif" class="rounded img-fluid" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/newOnStream/tarot.avif" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/newOnStream/athomugam.avif" class="rounded img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Releases -->
+        <section>
+            <div class="container">
+                <h3>Upcoming Releases</h3>
+                <div class="row" style="row-gap:0px;">
+                    <div class="card col-lg-2 col-md-4 col-6" style="border:none;">
+                        <img src="./images/upcoming/shoshana.avif" class="rounded img-fluid" />
+                        <div class="card-body" style="cursor:pointer;">
+                            <b class="card-title text-danger">PRE-BOOK</b>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-md-4 col-6" style="border:none;">
+                        <img src="./images/upcoming/trap.avif" class="rounded img-fluid" />
+                        <div class="card-body" style="cursor:pointer;">
+                            <b class="card-title text-danger">PRE-BOOK</b>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-md-4 col-6" style="border:none;">
+                        <img src="./images/upcoming/gondola.avif" class="img-fluid rounded" />
+                        <div class="card-body" style="cursor:pointer;">
+                            <b class="card-title text-danger">PRE-BOOK</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top TV Shows -->
+        <section>
+            <div class="container">
+                <h3>Top TV Shows</h3>
+                <div class="row" style="row-gap: 20px;">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/tvShows/endeavour1.avif" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-lg-2 col-md-4  col-6">
+                        <img src="./images/tvShows/davos.avif" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/tvShows/pembrokeshireMurders.avif" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/tvShows/endeavourSeries2.avif" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/tvShows/lineOfDutySeason6.avif" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/tvShows/vanDerValkSeason3.avif" class="img-fluid rounded" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXCLUSIVES -->
+        <section class="exclusive-sec bg-secondary">
+            <div class="container">
+                <div class="exclusive-image">
+                    <img src="./images/exclusives/exclusiveBanner.avif" class="img-fluid" />
+                </div>
+                <div class="row" style="row-gap:20px;">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/exclusives/aazam.avif" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/exclusives/exhuma.avif" class="rounded img-fluid" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/exclusives/strangersOnaTrain.avif" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/exclusives/deathOfMule.avif" class="rounded img-fluid" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/exclusives/historyOfViolence.avif" class="rounded img-fluid" />
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="./images/exclusives/lostFound.avif" class="img-fluid rounded" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Price Range -->
+        <section class="price-range-sec">
+            <div class="container">
+                <div class="price-range-content">
+                    <div class="price-heading">Browse by price range</div>
+                    <div class="all-prices">
+                        <div class="d-flex first-line">
+                            <div class="price">₹0 - ₹50</div>
+                            <div class="price">₹51 - ₹100</div>
+                            <div class="price">₹101 - 200</div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="price">₹201 - ₹350</div>
+                            <div class="price">₹351 - ₹550</div>
+                            <div class="price">₹550+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home -> Stream -->
+        <section class="home-stream-sec">
+            <div class="container py-3 text-secondary">
+                <div class="d-flex">
+                    <div class="mr-2">Home</div>
+                    <div class="mr-2">&#8594;</div>
+                    <div>Stream</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Stream Page -->
+        <section class="bottom-text-sec">
+            <div class="container pt-3">
+                <div class="headings">
+                    <h3>Watch Movies Online 24x7 - Weekdays or Weekends!</h3>
+                </div>
+                <div class="paras pb-3">
+                    <div>
+                        Are you looking for platforms to fill your mundane days with drama and emotions? Entertainment
+                        has been a major source
+                        of laughter, love, and happiness in India and around the globe. Why don't you bring back all of
+                        these with just a few
+                        clicks on your mobile screens? It is a fact that we love to binge movies on our free days. No
+                        matter what your age group is or
+                        your choices are, at BMS Stream, you will find it all under one platform!
+                    </div>
+                </div>
+                <div class="headings">
+                    <h4>Watch the latest movies 2023 online in HD!</h4>
+                </div>
+                <div class="paras pb-3">
+                    <div>
+                        Movies have been around us for decades now. Most importantly, the love for them is only
+                        increasing. There are several reasons
+                        for this; however, the most important thing is that movies are the best way to entertain
+                        yourself. If you love to spend your
+                        weekends with your favourite movies or binge-watching with your partner, you can enjoy the
+                        latest movies with BMS Stream by
+                        renting them at a reasonable price. We offer a variety of award-winning movies to stream on
+                        hundreds of internet-connected devices.
+                    </div>
+                </div>
+                <div class="headings">
+                    <h4>What are the best movies to watch online?</h4>
+                </div>
+                <div class="paras pb-3">
+                    <div>
+                        Not just Bollywood, on BookMyShow Stream, there are a ton of Hollywood and Tollywood titles too.
+                        Watch top movies online in English,
+                        Hindi, regional, and other foreign languages – no matter where you belong or what language you
+                        are most comfortable with, we have your back!
+                    </div>
+                </div>
+                <div class="paras pb-3">
+                    <div>
+                        Watch the latest movie flicks, rent movies as you like, and have access to your favourite movies
+                        streaming online today in just one click! Happy browsing!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <section class="text-light bg-secondary">
+                <div class="container">
+                    <div class="w-100 d-flex justify-content-start align-items-center pt-3 pb-3">
+                        <div>
+                            <img src="https://in.bmscdn.com/webin/common/icons/hut.svg" class="img-fluid pr-2">
+                        </div>
+                        <div class="font-weight-bolder mr-3 ml-1">List your Show</div>
+                        <div class="long-text">
+                            Got a show, event, activity or a great experience? Partner with us & get listed on
+                            BookMyShow
+                        </div>
+                        <div class="bg-danger rounded p-2">Contact today!</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer-second w-100">
+                <div class="container">
+                    <div class="w-100 d-flex justify-content-around pt-3 pb-3">
+                        <a>
+                            <div>24/7 CUSTOMER CARE</div>
+                        </a>
+                        <a>
+                            <div>RESEND BOOKING CONFIRMATION</div>
+                        </a>
+                        <a>
+                            <div>SUBSCRIBE TO THE NEWSLETTER</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-now w-100">
+                <div class="container">
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Movies Now Showing in
+                            Hyderabad</div>
+                        <div class="movie-title">
+                            <a href="#">Kushi</a> <a href="#">Jawan</a> <a href="#">Jailer</a> <a href="#">Dream Girl
+                                2</a>
+                            <a href="#">Bedurulanka 2012</a> <a href="#">The Equalizer 3</a> <a href="#">Boys Hostel</a>
+                            <a href="#">OMG 2</a> <a href="#">Gadar 2: The Katha Continues</a>
+                            <a href="#" style="border: none;">Teenage Mutant Ninja Turtles: Mutant Mayhem</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Upcoming Movies in
+                            Hyderabad</div>
+                        <div class="movie-title">
+                            <a href="#">Miss Shetty Mr Polishetty</a> <a href="#">Thirayattam</a> <a
+                                href="#">Mukalparapp</a>
+                            <a href="#">Thurum Khanlu</a> <a href="#">Kaddha Chitra</a> <a href="#">Angaaragan</a>
+                            <a href="#">Vaathil</a> <a href="#">Brahmachari</a> <a href="#">Baanadariyalli</a>
+                            <a href="#" style="border: none;">Kasargold</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Movies by Genre</div>
+                        <div class="movie-title">
+                            <a href="#">Drama Movies</a> <a href="#">Action Movies</a> <a href="#">Comedy Movies</a>
+                            <a href="#">Thriller Movies</a> <a href="#">Romantic Movies</a> <a href="#">Adventure
+                                Movies</a>
+                            <a href="#">Crime Movies</a> <a href="#">Historical Movies</a> <a href="#">Animation
+                                Movies</a>
+                            <a href="#">Period Movies</a> <a href="#">Adaptation Movies</a> <a href="#">Mythological
+                                Movies</a>
+                            <a href="#">Noir Movies</a> <a href="#">Political Movies</a> <a href="#">Supernatural
+                                Movies</a>
+                            <a href="#">Sports Movies</a> <a href="#">Heist Movies</a> <a href="#">Tragedy Movies</a>
+                            <a href="#">Anime Movies</a> <a href="#" style="border: none;">Horror Movies</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Movie Reviews and
+                            Trending Articles</div>
+                        <div class="movie-title">
+                            <a class="#">Trending Articles</a> <a href="#">Latest News on Movies, Events, Plays and
+                                Sports</a>
+                            <a href="#" style="border: none;">Movie Celebrities</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Countries</div>
+                        <div class="movie-title">
+                            <a href="#">Indonesia</a> <a href="#">Singapore</a> <a href="#">UAE</a> <a href="#">Sri
+                                Lanka</a>
+                            <a href="#" style="border: none;">West Indies</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Help</div>
+                        <div class="movie-title">
+                            <a href="#">About Us</a> <a href="#">Contact Us</a> <a href="#">Current Opening</a> <a
+                                href="#">Press Release</a>
+                            <a href="#">Press Coverage</a> <a href="#">Sitemap</a> <a href="#">FAQs</a> <a
+                                href="#">Terms and Conditions</a>
+                            <a href="#" style="border: none;">Privacy policy</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Bookmyshow Exclusive
+                        </div>
+                        <div class="movie-title">
+                            <a href="#">Lollapalooza India</a> <a href="#">Superstar</a> <a href="#">BookASmile</a> <a
+                                href="#">Corporate Vochers</a>
+                            <a href="#">Gift Cards</a> <a href="#">List My Show</a> <a href="#">Offers</a> <a
+                                href="#">Stream</a>
+                            <a href="#">Buzz</a> <a href="#">Movie Trailers</a> <a href="#" style="border: none;">Summer
+                                Activities</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer-bottom w-100">
+                <div class="container">
+                    <div class="bms-logo d-flex justify-content-center align-items-center">
+                        <img src="../images/logo/logo.svg">
+                    </div>
+                    <div class="social-media text-center">
+                        <a href="#" class="rounded-circle bg-light text-primary">
+                            <i class="fa-brands fa-facebook fa-xl"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-light text-info">
+                            <i class="fa-brands fa-twitter fa-xl"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-light text-danger">
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-light text-danger">
+                            <i class="fa-brands fa-youtube fa-xl"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-light text-warning">
+                            <i class="fa-brands fa-pinterest fa-xl"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-light text-success">
+                            <i class="fa-brands fa-whatsapp fa-xl"></i>
+                        </a>
+                    </div>
+                    <div class="text-center p-4">
+                        Copyright 2023 &#169 Bigtree Entertainment Pvt. Ltd. All Rights Reserved.
+                        <br>
+                        The content and images used on this site are copyright protected and copyrights vests with the
+                        respective
+                        owners. The usage of the content and images on this website is intended to promote the works and
+                        no endorsement
+                        of the artist shall be implied. unauthorized use is prohibited and punishable by law.
+                    </div>
+                </div>
+            </footer>
+        </footer>
+    </div>
+</body>
+
+</html>
